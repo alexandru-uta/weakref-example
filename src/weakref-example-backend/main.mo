@@ -30,7 +30,7 @@ persistent actor {
   var blobList = List.empty<[var Nat]>();
 
   public func addBlob(value : Nat) : async () {
-    // Create a blob of 10MB full of 'value'.
+    // Create a blob of 2MB full of 'value'.
     let blob = Prim.Array_init<Nat>(1024 * 1024 * 2, value);
     // Create a weak reference to the blob.
     let ref = Prim.allocWeakRef(blob);
