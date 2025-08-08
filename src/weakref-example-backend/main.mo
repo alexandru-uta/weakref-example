@@ -10,7 +10,7 @@ persistent actor {
   // Prettier type wrapping a weak reference.
   // One can also add other kind of metadata if needed.
   type CacheValue<T> = {
-    ref : Weak T;
+    ref : weak T;
   };
 
   // The seed for the hash map.
